@@ -128,23 +128,62 @@
 
 
 
-musa = "edm.txt"
-fail = open("edm.txt", encoding="UTF-8")
+# musa = "edm.txt"
+# fail = open("edm.txt", encoding="UTF-8")
 
-nr = 1
-for pala in fail:
-    print(str(nr)+". "+pala, end="")
-    nr += 1
+# nr = 1
+# for pala in fail:
+#     print(str(nr)+". "+pala, end="")
+#     nr += 1
 
-print()
-valik = int(input("Vali lugu: "))
-fail = open(musa, encoding="UTF-8") #võib ka: fail.seek(o)
-mangin = 1
-for pala in fail:
-    if valik == mangin:
-        print(pala, end="")
-    mangin+=1
+# print()
+# valik = int(input("Vali lugu: "))
+# fail = open(musa, encoding="UTF-8") #võib ka: fail.seek(o)
+# mangin = 1
+# for pala in fail:
+#     if valik == mangin:
+#         print(pala, end="")
+#     mangin+=1
     
 
 
-fail.close()
+# fail.close()
+
+
+
+
+
+# def liitmine(a, b):
+#     # a = 12
+#     # b = 14
+#     c = a + b
+#    # print(c)
+#     return c
+
+# nr = 10
+# nr2 = 20
+# s = liitmine(liitmine(nr, nr2), 100)
+
+
+def viruvinkel(t1, t2):
+    if t1[0]==t2[0]:
+        return True
+    else:
+        return False
+
+
+
+def pikim_sona(s):
+    sona = ""
+    for i in s:
+        if len(sona) < len(i):
+            sona = i
+            print(i)
+
+
+    print("pikim sõna on: "+sona)
+     
+
+sonad = ["viisnurk", "ring", "ruut", "suvaline"]
+pikim_sona(sonad)
+print(viruvinkel("Mario", "Ets"))
