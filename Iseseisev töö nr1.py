@@ -11,9 +11,9 @@ def joonista_taht(kulje_pikkus, tahtede_arv):
         turtle.left(nurk)  # järgmise kolmnurga asukohta
 
 
-def pea():
+def taht():
     kulje_pikkus = 100  # Siin saad külje pikkust muuta
-    tahtede_arv = 11  # Mustri korduste arv
+    tahtede_arv = 11  # Korduste arv
     
     turtle.penup()
     turtle.goto(-kulje_pikkus / 2, kulje_pikkus / (2 * math.sqrt(3)))
@@ -24,4 +24,4 @@ def pea():
 
 
 if __name__ == "__main__":
-    pea()
+    taht()
